@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F9F5F0;
+}
+
+/* Header */
+header {
+    background-color: #FEF3E2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column; /* stack image + select vertically */
+    align-items: center;    /* center items */
+}
+
+.product img {
+    max-width: 200px;
+    margin-bottom: 10px; 
+}
+
+.fixed-header {
+    position: fixed;    /* makes it stay on screen */
+    top: 0;             /* distance from top */
+    left: 0;            /* distance from left */
+    width: 100%;        /* full width */
+    z-index: 1000;      /* stays above other content */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional */
+}
+
+.fixed-footer {
+    position: fixed;    /* makes it stay on screen */
+    bottom: 0;             /* distance from top */
+    left: 0;            /* distance from left */
+    width: 100%;        /* full width */
+    z-index: 1000;      /* stays above other content */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional */
+}
+
+header h1 {
+    color: pink;
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: Monotype Corsiva
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+main p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+
+/* Images row */
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* wrap on small screens */
+    
+}
+
+.image-row img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* optional: rounded corners */
+    border: 5px solid rgb(40, 28, 5);   /* thickness + color */
+    border-radius: 10px;
+}
+
+.under-images {
+    margin-top: 20px;       /* space between images and list */
+    text-align: center;     /* center the list */
+    list-style-type: none;  /* optional: remove bullets */
+    padding: 0;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.under-images li {
+    margin: 5px 0;          /* space between list items */
+}
+
+/* Footer */
+footer {
+    background-color: #373502;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
